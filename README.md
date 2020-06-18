@@ -4,13 +4,17 @@
 
 <h3 align="center">FSXY APP</h3>
 
+<div align="center">
+
 [![](https://img.shields.io/badge/Author-Sky-orange.svg)](https://github.com/skyunBoss)
 [![](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://github.com/skyunBoss/fsxy)
 [![GitHub stars](https://img.shields.io/github/stars/skyunBoss/fsxy.svg?style=social&label=Stars)](https://github.com/skyunBoss/fsxy)
 [![GitHub forks](https://img.shields.io/github/forks/skyunBoss/fsxy.svg?style=social&label=Fork)](https://github.com/skyunBoss/fsxy)
 
+</div>
+
 ## 前言
-FSXY APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社区APP，后台管理系统基于 [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ，服务端基于 [egg](https://github.com/eggjs/egg)
+FSXY APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社区APP，后台管理系统基于 [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ，服务端基于 [egg](https://github.com/eggjs/egg) ，数据库 Mysql
 
 ## App截图
 <img src="http://upload.51des.com/app.png">
@@ -19,13 +23,13 @@ FSXY APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社
 <img src="http://upload.51des.com/manage.jpg">
 
 ## 目录结构
-``` txt
-├── app                                       # app源码
-├── client                                     # 中后台源码
-├── server                                   # 服务端源码
-├── README.md                          # 项目说明
-├── fsxy.postman_collection.json   # postman json
-└── fsxy.sql                                  # sql语句
+``` javascript
+├── app // app源码
+├── client // 中后台源码
+├── serve // 服务端源码
+├── README.md // 项目说明
+├── fsxy.postman_collection.json // postman json
+└── fsxy.sql // sql语句
 ```
 
 ## 问题反馈
