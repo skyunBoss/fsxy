@@ -2,7 +2,7 @@
     <img alt="logo" src="http://upload.51des.com/fsxy.jpeg" width="208" height="160" style="margin-bottom: 10px;">
 </p>
 
-<h3 align="center">FSXY APP</h3>
+<h3 align="center">FSXY-APP</h3>
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 </div>
 
 ## 前言
-FSXY APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社区APP，后台管理系统基于 [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ，服务端基于 [egg](https://github.com/eggjs/egg) ，数据库 Mysql
+FSXY-APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社区APP，后台管理系统基于 [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ，服务端基于 [egg](https://github.com/eggjs/egg) ，数据库 Mysql
 
 ## 开发环境运行
 ``` bash
