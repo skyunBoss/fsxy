@@ -1,0 +1,119 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "辐射安全与防护知识在线学习",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
+		}, {
+			"path": "pages/reg/reg",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "pages/pwd/pwd",
+			"style": {
+				"navigationBarTitleText": "找回密码"
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}, {
+            "path" : "pages/study/study",
+            "style" : {
+				"navigationBarTitleText": "交流学习"
+			}
+        }, {
+            "path" : "pages/examination/examination",
+            "style" : {
+				"navigationBarTitleText": "体检预约"
+			}
+        }, {
+            "path" : "pages/contact/contact",
+            "style" : {
+				"navigationBarTitleText": "联系我们"
+			}
+        }, {
+            "path" : "pages/list/list",
+            "style" : {}
+        }, {
+            "path" : "pages/article/article",
+            "style" : {}
+        }, {
+            "path" : "pages/publish/publish",
+            "style" : {
+				"navigationBarTitleText": "发布"
+			}
+        }, {
+            "path" : "pages/precautions/precautions",
+            "style" : {
+				"navigationBarTitleText": "注意事项"
+			}
+        }, {
+            "path" : "pages/process/process",
+            "style" : {
+				"navigationBarTitleText": "体检流程图"
+			}
+        }, {
+            "path" : "pages/notice/notice",
+            "style" : {
+				"navigationBarTitleText": "体检须知"
+			}
+        }, {
+            "path" : "pages/result/result",
+            "style" : {
+				"navigationBarTitleText": "预约结果"
+			}
+        }
+    ],
+	"tabBar": {
+		"color": "#7a7e83",
+		"selectedColor": "#5d52df",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "white",
+		"iconWidth": "18px",
+		"list": [{
+			"pagePath": "pages/home/home",
+			"text": "首页",
+			"iconPath": "static/img/home.png",
+			"selectedIconPath": "static/img/homeHL.png"
+		}, {
+			"pagePath": "pages/study/study",
+			"text": "交流学习",
+			"iconPath": "static/img/study.png",
+			"selectedIconPath": "static/img/studyHL.png"
+		}, {
+			"pagePath": "pages/examination/examination",
+			"text": "体检预约",
+			"iconPath": "static/img/examination.png",
+			"selectedIconPath": "static/img/examinationHL.png"
+		}, {
+			"pagePath": "pages/contact/contact",
+			"text": "联系我们",
+			"iconPath": "static/img/contact.png",
+			"selectedIconPath": "static/img/contactHL.png"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#6155e7",
+		"backgroundColor": "#fbfbfb"
+	},
+	"easycom": {
+		"uni-(.*)": "@/components/uni-$1/uni-$1.vue"
+	}
+}
