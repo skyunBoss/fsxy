@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.1s ease-in;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}

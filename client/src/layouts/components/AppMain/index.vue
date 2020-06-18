@@ -1,0 +1,95 @@
+<template>
+  <section class="app-main-container">
+    <byui-keel v-if="show && skeleton" style="margin: 15px;">
+      <byui-keel-heading :img="true" />
+      <byui-keel-text :lines="7" />
+      <byui-keel-heading :img="true" />
+      <byui-keel-text :lines="6" />
+      <byui-keel-heading :img="true" />
+      <byui-keel-text :lines="8" />
+    </byui-keel>
+    <transition mode="out-in" name="fade-transform">
+      <keep-alive :include="cachedRoutes" :max="10">
+        <router-view :key="key" style="min-height: 80.6vh;" />
+      </keep-alive>
+    </transition>
+    <footer class="footer-copyright">
+      Copyright
+      <byui-icon :icon="['fas', 'copyright']"></byui-icon>
+      {{ fullYear }} {{ copyright }}
+    </footer>
+  </section>
+</template>
+
+<script>
+import { ByuiKeel, ByuiKeelHeading, ByuiKeelText } from "@/plugins/byuiKeel";
+import { mapGetters } from "vuex";
+import { copyright } from "@/config/settings";
+
+export default {
+  name: "AppMain",
+  components: {
+    ByuiKeel,
+    ByuiKeelHeading,
+    ByuiKeelText,
+  },
+  data() {
+    return {
+      show: true,
+      nodeEnv: process.env.NODE_ENV,
+      fullYear: new Date().getFullYear(),
+      copyright,
+    };
+  },
+  computed: {
+    ...mapGetters({
+      cachedRoutes: "tagsBar/cachedRoutes",
+      device: "settings/device",
+      skeleton: "settings/skeleton",
+    }),
+    key() {
+      return this.$route.path;
+    },
+  },
+  watch: {
+    $route(to, from) {
+      this.$nextTick(() => {
+        if (this.$store.state.tagsBar.skeleton) {
+          this.show = true;
+          setTimeout(() => {
+            this.show = false;
+          }, 200);
+        } else {
+          this.show = false;
+        }
+        if ("mobile" === this.device) {
+          this.$store.dispatch("settings/foldSideBar");
+        }
+      });
+    },
+  },
+  created() {},
+  mounted() {
+    setTimeout(() => {
+      this.show = false;
+    }, 200);
+  },
+  methods: {},
+};
+</script>
+
+<style lang="scss" scoped>
+.app-main-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .footer-copyright {
+    min-height: 55px;
+    line-height: 55px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    border-top: 1px dashed $base-border-color;
+  }
+}
+</style>

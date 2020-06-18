@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+$base-color-default: #1890ff;
+$base-z-index: 999;
+
+$base-menu-background: #2a58ad;
+$base-menu-children-background: #2a58ad;
+$base-menu-background-active: #1d4c9e;
+$base-menu-color: hsla(0, 0%, 100%, 0.95);
+$base-menu-color-active: hsla(0, 0%, 100%, 0.95);
+$base-title-color: #fff;
+
+$base-font-size-small: 12px;
+$base-font-size-default: 14px;
+$base-font-size-big: 16px;
+$base-font-size-bigger: 18px;
+$base-font-size-max: 22px;
+$base-color-header: $base-menu-background;
+$base-color-blue: $base-color-default;
+$base-color-green: #13ce66;
+$base-color-white: #fff;
+$base-color-black: #000;
+$base-color-yellow: #ffba00;
+$base-color-orange: #ff6700;
+$base-color-red: #ff4d4f;
+$base-color-gray: rgba(0, 0, 0, 0.65);
+$base-main-width: 1279px;
+$base-border-radius: 2px;
+$base-border-color: #ebeef5;
+$base-form-width: 600px;
+$base-input-height: 32px;
+$base-pagination-height: 28px;
+$base-dialog-title-height: 40px;
+$base-padding: 15px;
+$base-box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+$base-font-color: #606266;
+$base-left-menu-width: 220px;
+$base-right-content-width: calc(100% - #{$base-left-menu-width});
+$base-left-menu-width-min: 65px;
+$base-right-content-width-min: calc(100% - #{$base-left-menu-width-min});
+
+/* stylelint-disable */
+:export {
+  menu-color: $base-menu-color;
+  menu-color-active: $base-menu-color-active;
+  menu-background: $base-menu-background;
+  menu-children-background: $base-menu-children-background;
+  menu-background-active: $base-menu-background-active;
+  tags-bar-background-active: $base-color-blue;
+  button-background: $base-color-blue;
+  pagination-background-active: $base-color-blue;
+}
