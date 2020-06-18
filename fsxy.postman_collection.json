@@ -1,0 +1,870 @@
+{
+	"id": "17210ea3-61fc-42a2-a775-d2fb0f0bcf4b",
+	"name": "fsxy",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [],
+	"folders_order": [
+		"9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+		"e16908b3-c258-4b74-b072-7516d04397dc"
+	],
+	"protocolProfileBehavior": {},
+	"folders": [
+		{
+			"id": "e16908b3-c258-4b74-b072-7516d04397dc",
+			"name": "APP",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "17210ea3-61fc-42a2-a775-d2fb0f0bcf4b",
+			"folder": null,
+			"order": [
+				"66509963-ef50-4e4c-b476-da708885ea87",
+				"fd9a869d-846d-4caf-9bac-c74409eb3ac0",
+				"d62772d9-8611-4392-8794-35173f4bde2b",
+				"43812403-c055-41f6-a7cd-c89cadf661a0",
+				"41a97816-4113-4027-b397-3e3822e527fe"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"name": "Admin",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "17210ea3-61fc-42a2-a775-d2fb0f0bcf4b",
+			"folder": null,
+			"order": [
+				"0a4fd4d0-eb83-45a0-8363-84aa7efc0e80",
+				"40b494b8-1f08-457d-a4c8-eb1c19b02c08",
+				"751cdbd5-6462-4bcb-b54c-3304619ea493",
+				"e253ef65-3984-43aa-b06a-a6b991930284",
+				"c396438d-af6f-448a-a30b-83c5678aa409",
+				"2f8549fc-3035-47ed-b138-03a8213e1b95",
+				"c6336f6a-2c89-441a-b2d9-55ddda3aaab6",
+				"2a4636e4-d75d-4e8b-af21-f6c753121567",
+				"aa82e59a-f228-4c3a-aff4-df0058660b84",
+				"c57efec7-b776-42fb-8316-8dd34275cc7e",
+				"d8c02533-a03e-4077-ae56-ee05a14dd7eb",
+				"39097a7c-6dc9-4923-a74c-eb8c5178b850",
+				"2b1c788b-ce85-4b37-9120-850b99f6bfb8",
+				"65b1db44-e4af-438d-a729-5dd949634738",
+				"8ded2e0d-b6ed-402a-91da-055a66c957d6",
+				"c3020852-b9b9-4df2-9b2b-68ee0f44b402",
+				"8a054d67-11bd-4828-8d2f-08ee05a7b03e",
+				"ebe7b85c-ea53-468b-a4e0-2f849f846cad"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"requests": [
+		{
+			"id": "0a4fd4d0-eb83-45a0-8363-84aa7efc0e80",
+			"name": "登录",
+			"url": "http://127.0.0.1:7001/api/admin/login",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"userName\": \"admin\",\n\t\"password\": \"666666\"\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "2a4636e4-d75d-4e8b-af21-f6c753121567",
+			"name": "删除文章",
+			"url": "http://127.0.0.1:7001/api/article",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"id\": 2\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2b1c788b-ce85-4b37-9120-850b99f6bfb8",
+			"name": "修改联系我们",
+			"url": "http://127.0.0.1:7001/api/contact",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"label\": \"电话\",\n\t\"value\": \"13000000011\"\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2f8549fc-3035-47ed-b138-03a8213e1b95",
+			"name": "查询分类",
+			"url": "http://127.0.0.1:7001/api/category/list?currentPage=1&pageSize=10",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "urlencoded",
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "currentPage",
+					"value": "1",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"pathVariables": {}
+		},
+		{
+			"id": "39097a7c-6dc9-4923-a74c-eb8c5178b850",
+			"name": "删除联系我们",
+			"url": "http://127.0.0.1:7001/api/contact",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"id\": 1\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "40b494b8-1f08-457d-a4c8-eb1c19b02c08",
+			"name": "上传",
+			"url": "http://127.0.0.1:7001/api/upload",
+			"description": "",
+			"data": [
+				{
+					"key": "",
+					"value": "/Users/xuchao/Downloads/add.png",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "accessToken",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTIwOTM4NTYsImV4cCI6MTU5MjY5ODY1Nn0.tVIhc_tshGRXWDyqBL30YMebZVCv5asD5YMDqrMZGX4",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTIwOTM4NTYsImV4cCI6MTU5MjY5ODY1Nn0.tVIhc_tshGRXWDyqBL30YMebZVCv5asD5YMDqrMZGX4\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "41a97816-4113-4027-b397-3e3822e527fe",
+			"name": "查询学习交流列表",
+			"url": "http://127.0.0.1:7001/api/comment?currentPage=1&pageSize=10",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "currentPage",
+					"value": "1",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "e16908b3-c258-4b74-b072-7516d04397dc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "43812403-c055-41f6-a7cd-c89cadf661a0",
+			"name": "创建学习交流",
+			"url": "http://127.0.0.1:7001/api/comment",
+			"description": "",
+			"data": [
+				{
+					"key": "user_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "测试评论",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "file",
+					"value": "/Users/xuchao/Downloads/add.png",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "params",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "uuid",
+					"type": "text",
+					"value": "2tUo0rfGOmI6DQGe1iiLgU3pk6igUwj6"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e16908b3-c258-4b74-b072-7516d04397dc",
+			"headers": "uuid: 2tUo0rfGOmI6DQGe1iiLgU3pk6igUwj6\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "65b1db44-e4af-438d-a729-5dd949634738",
+			"name": "查询联系我们",
+			"url": "http://127.0.0.1:7001/api/contact?currentPage=1&pageSize=10",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "currentPage",
+					"value": "1",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "66509963-ef50-4e4c-b476-da708885ea87",
+			"name": "登录",
+			"url": "http://127.0.0.1:7001/api/app/login",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e16908b3-c258-4b74-b072-7516d04397dc",
+			"rawModeData": "{\n\t\"username\": \"sky\",\n\t\"password\": \"666666\"\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "751cdbd5-6462-4bcb-b54c-3304619ea493",
+			"name": "创建分类",
+			"url": "http://127.0.0.1:7001/api/category",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "accessToken",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"title\": \"辐射防护基础知识\",\n\t\"desc\": \"这里是描述\",\n\t\"cover\": \"http://qbcpt1i36.bkt.clouddn.com/1591445349828.png\"\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8a054d67-11bd-4828-8d2f-08ee05a7b03e",
+			"name": "查询联系我们列表",
+			"url": "http://127.0.0.1:7001/api/examination/list?currentPage=1&pageSize=10&keyword=s",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTIwOTM4NTYsImV4cCI6MTU5MjY5ODY1Nn0.tVIhc_tshGRXWDyqBL30YMebZVCv5asD5YMDqrMZGX4"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "currentPage",
+					"value": "1",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				},
+				{
+					"key": "keyword",
+					"value": "s",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTIwOTM4NTYsImV4cCI6MTU5MjY5ODY1Nn0.tVIhc_tshGRXWDyqBL30YMebZVCv5asD5YMDqrMZGX4\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8ded2e0d-b6ed-402a-91da-055a66c957d6",
+			"name": "创建体检预约",
+			"url": "http://127.0.0.1:7001/api/examination",
+			"description": "",
+			"data": [
+				{
+					"key": "user_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "file",
+					"value": "/Users/xuchao/Downloads/体检预约/模板       这三个增加三个按钮/tpl2.xls",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "params",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "uuid",
+					"type": "text",
+					"value": "2tUo0rfGOmI6DQGe1iiLgU3pk6igUwj6"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"headers": "uuid: 2tUo0rfGOmI6DQGe1iiLgU3pk6igUwj6\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "aa82e59a-f228-4c3a-aff4-df0058660b84",
+			"name": "修改文章",
+			"url": "http://127.0.0.1:7001/api/article",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"id\": 3,\n\t\"category_id\": 3,\n\t\"title\": \"辐射防护基础知识\",\n\t\"content\": \"这里是内容1\"\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c3020852-b9b9-4df2-9b2b-68ee0f44b402",
+			"name": "修改体检预约",
+			"url": "http://127.0.0.1:7001/api/examination",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTIwOTM4NTYsImV4cCI6MTU5MjY5ODY1Nn0.tVIhc_tshGRXWDyqBL30YMebZVCv5asD5YMDqrMZGX4"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"unit\": \"测试单位\",\n\t\"status\": 0\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTIwOTM4NTYsImV4cCI6MTU5MjY5ODY1Nn0.tVIhc_tshGRXWDyqBL30YMebZVCv5asD5YMDqrMZGX4\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c396438d-af6f-448a-a30b-83c5678aa409",
+			"name": "修改分类",
+			"url": "http://127.0.0.1:7001/api/category",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"title\": \"辐射防护基础知识\",\n\t\"desc\": \"这里是描述1\",\n\t\"cover\": \"http://qbcpt1i36.bkt.clouddn.com/1591445349828.png\"\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c57efec7-b776-42fb-8316-8dd34275cc7e",
+			"name": "查询文章",
+			"url": "http://127.0.0.1:7001/api/article/list?category_id=3&currentPage=1&pageSize=10",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "urlencoded",
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "category_id",
+					"value": "3",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				},
+				{
+					"key": "currentPage",
+					"value": "1",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"pathVariables": {}
+		},
+		{
+			"id": "c6336f6a-2c89-441a-b2d9-55ddda3aaab6",
+			"name": "创建文章",
+			"url": "http://127.0.0.1:7001/api/article",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "accessToken",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"category_id\": 3,\n\t\"title\": \"辐射防护基础知识\",\n\t\"content\": \"这里是内容\"\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d62772d9-8611-4392-8794-35173f4bde2b",
+			"name": "注册",
+			"url": "http://127.0.0.1:7001/api/app/register",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e16908b3-c258-4b74-b072-7516d04397dc",
+			"rawModeData": "{\n\t\"username\": \"admin\",\n\t\"name\": \"sky2\",\n\t\"password\": \"666666\",\n\t\"sex\": 1,\n\t\"job\": \"全栈开发\",\n\t\"seniority\": \"3\",\n\t\"department\": \"研发一部\",\n\t\"company\": \"无敌\",\n\t\"birthday\": \"2020-03-04\"\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "d8c02533-a03e-4077-ae56-ee05a14dd7eb",
+			"name": "创建联系我们",
+			"url": "http://127.0.0.1:7001/api/contact",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"label\": \"电话\",\n\t\"value\": \"13000000001\"\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e253ef65-3984-43aa-b06a-a6b991930284",
+			"name": "删除分类",
+			"url": "http://127.0.0.1:7001/api/category",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "accessToken",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"rawModeData": "{\n\t\"id\": 1\n}",
+			"headers": "accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE1OTE0NDQxMDIsImV4cCI6MTU5MjA0ODkwMn0.IXiR5BFEBfvoeZNPN_R2sGSyNchDBnsKFoYIENpgjfE\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ebe7b85c-ea53-468b-a4e0-2f849f846cad",
+			"name": "查询体检预约详情",
+			"url": "http://127.0.0.1:7001/api/examination/detail?user_id=1",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "user_id",
+					"value": "1",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "9a5e359c-9633-4da7-b27f-1b2e2c66900c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\n\t\"user_id\": 1\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "fd9a869d-846d-4caf-9bac-c74409eb3ac0",
+			"name": "用户信息",
+			"url": "http://127.0.0.1:7001/api/app/user/info",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "uuid",
+					"value": "2tUo0rfGOmI6DQGe1iiLgU3pk6igUwj6",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e16908b3-c258-4b74-b072-7516d04397dc",
+			"rawModeData": "{\n\t\"id\": 1\n}",
+			"headers": "uuid: 2tUo0rfGOmI6DQGe1iiLgU3pk6igUwj6\n",
+			"pathVariables": {}
+		}
+	]
+}
