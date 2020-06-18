@@ -3,3 +3,7 @@
 </p>
 
 <h3 align="center" style="margin: 30px 0 35px;">fsxy</h3>
+
+## Preview
+<img src="http://upload.51des.com/app.png">
+
