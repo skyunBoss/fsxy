@@ -4,12 +4,10 @@
 
 <h3 align="center">FSXY APP</h3>
 
-<p align="center">
 [![](https://img.shields.io/badge/Author-Sky-orange.svg)](https://github.com/skyunBoss)
 [![](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://github.com/skyunBoss/fsxy)
 [![GitHub stars](https://img.shields.io/github/stars/skyunBoss/fsxy.svg?style=social&label=Stars)](https://github.com/skyunBoss/fsxy)
 [![GitHub forks](https://img.shields.io/github/forks/skyunBoss/fsxy.svg?style=social&label=Fork)](https://github.com/skyunBoss/fsxy)
-</p>
 
 ## 前言
 FSXY APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社区APP，后台管理系统基于 [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ，服务端基于 [egg](https://github.com/eggjs/egg)
