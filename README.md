@@ -16,6 +16,21 @@
 ## 前言
 FSXY APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社区APP，后台管理系统基于 [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ，服务端基于 [egg](https://github.com/eggjs/egg) ，数据库 Mysql
 
+## 开发环境运行
+``` bash
+# 步骤一 导入数据库
+import sql
+
+# 步骤二 启服务
+cd server && yarn install && yarn dev
+
+# 步骤三 后台管理
+cd client && yarn install && yarn serve
+
+# 步骤四 Hbuilder导入app项目并运行
+
+```
+
 ## App截图
 <img src="http://upload.51des.com/app.png">
 
@@ -34,4 +49,5 @@ FSXY APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社
 
 ## 问题反馈
 在使用中有任何问题，欢迎反馈给我
+
 QQ ：[982779524](https://jq.qq.com/?_wv=1027&k=4BeVA2r)
