@@ -14,7 +14,7 @@
 </div>
 
 ## 前言
-FSXY-APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社区APP，后台管理系统基于 [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ，服务端基于 [egg](https://github.com/eggjs/egg) ，数据库 Mysql
+FSXY-APP基于 [uni-app](https://github.com/dcloudio/uni-app) 的一款开源社区APP，后台管理系统基于 [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful) ，服务端基于 [egg](https://github.com/eggjs/egg) ，数据库采用 Mysql
 
 ## 开发环境运行
 ``` bash
